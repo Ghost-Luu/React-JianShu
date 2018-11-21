@@ -1,10 +1,68 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React—全家桶仿简书部分功能
 
-## Available Scripts
+### [前言](_)
 
-In the project directory, you can run:
+> 前段时间接触了下React，一直想要自己写一个小Demo练手。在众多应用中，考虑之后选择了简书来模仿，这段时间就利用了工作之余的时间进行开发。主要用到了React+React-Router4+Redux+Redux-thunk+Immutable。然而写文章也是可以复盘一下自己的开发过程，对自己还是受益良多的。在这里简单叙述一下我仿简书部分布局以及功能实现的过程，仅做学习用途。
 
-### `npm start`
+### `技术栈以及组件库`
+
+* Redux：解决组件数据共享问题
+* Redux-thunk：Redux中间件，允许action可以返回函数
+* Immutable：保证数据的不可变
+* Loadable：异步加载组件
+* Transition-group：动画实现
+* styled-components：组件化样式
+* axios： 这个大家都知道吧-_-
+
+### `文件结构`
+
+┣━ build &emsp;// 打包文件
+┣━ public &emsp;// 打包文件
+&emsp;&emsp;┣━ api &emsp;//假数据统一存储
+&emsp;&emsp;&emsp;&emsp;┣━ detail.json &emsp;//文章页数据
+&emsp;&emsp;&emsp;&emsp;┣━ headerList.json &emsp;//头部热门搜索数据
+&emsp;&emsp;&emsp;&emsp;┣━ home.json &emsp;//首页统一数据
+&emsp;&emsp;&emsp;&emsp;┣━ homeList.json &emsp;//首页加载更多文章数据
+&emsp;&emsp;&emsp;&emsp;┣━ login.json &emsp;//登录数据
+┣━ src &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//开发目录
+&emsp;&emsp;┣━ common &emsp;//公用组件
+&emsp;&emsp;&emsp;&emsp;┣━ header &emsp;//头部组件
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ store &emsp;//Redux文件
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ actionCreators.js &emsp;//action创建
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ constants.js &emsp;//action.type常量文件
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ index.js &emsp;//入口文件
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ reducer.js &emsp;//reducer处理
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ store &emsp;//UI组件
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ store &emsp;//头部样式
+&emsp;&emsp;┣━ pages &emsp;//页面
+&emsp;&emsp;&emsp;&emsp;┣━ detail &emsp;//文章页
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ ...
+&emsp;&emsp;&emsp;&emsp;┣━ detail &emsp;//首页
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ ...
+&emsp;&emsp;&emsp;&emsp;┣━ detail &emsp;//登录页
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ ...
+&emsp;&emsp;&emsp;&emsp;┣━ detail &emsp;//写文章
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ ...
+&emsp;&emsp;┣━ statics &emsp;//静态文件
+&emsp;&emsp;&emsp;&emsp;┣━ ...
+&emsp;&emsp;┣━ store &emsp;//Redux数据
+&emsp;&emsp;&emsp;&emsp;┣━ ...
+&emsp;&emsp;┣━ App.js &emsp;//入口及路由
+&emsp;&emsp;┣━ index.js &emsp;//js文件入口
+&emsp;&emsp;┣━ style.js &emsp;//全局样式
+┣━ .gitignore &emsp;//git忽略上传文件
+┣━ package.json &emsp;//模块的描述文件
+┣━ README.md &emsp;//说明文件
+┣━ yarn.lock &emsp;//模块的描述文件
+
+### `效果预览`
+
+<iframe height=300 width=650 src="./src/statics/big_effect.gif">
+
+### `实现主要几个功能`
+
+
+
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -31,11 +89,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
