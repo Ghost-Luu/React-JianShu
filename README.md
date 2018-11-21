@@ -15,49 +15,50 @@
 * axios： 这个大家都知道吧-_-
 
 ### `文件结构`
-
-┣━ build &emsp;// 打包文件
-┣━ public &emsp;// 打包文件
-&emsp;&emsp;┣━ api &emsp;//假数据统一存储
-&emsp;&emsp;&emsp;&emsp;┣━ detail.json &emsp;//文章页数据
-&emsp;&emsp;&emsp;&emsp;┣━ headerList.json &emsp;//头部热门搜索数据
-&emsp;&emsp;&emsp;&emsp;┣━ home.json &emsp;//首页统一数据
-&emsp;&emsp;&emsp;&emsp;┣━ homeList.json &emsp;//首页加载更多文章数据
-&emsp;&emsp;&emsp;&emsp;┣━ login.json &emsp;//登录数据
-┣━ src &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//开发目录
-&emsp;&emsp;┣━ common &emsp;//公用组件
-&emsp;&emsp;&emsp;&emsp;┣━ header &emsp;//头部组件
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ store &emsp;//Redux文件
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ actionCreators.js &emsp;//action创建
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ constants.js &emsp;//action.type常量文件
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ index.js &emsp;//入口文件
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ reducer.js &emsp;//reducer处理
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ store &emsp;//UI组件
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ store &emsp;//头部样式
-&emsp;&emsp;┣━ pages &emsp;//页面
-&emsp;&emsp;&emsp;&emsp;┣━ detail &emsp;//文章页
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ ...
-&emsp;&emsp;&emsp;&emsp;┣━ detail &emsp;//首页
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ ...
-&emsp;&emsp;&emsp;&emsp;┣━ detail &emsp;//登录页
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ ...
-&emsp;&emsp;&emsp;&emsp;┣━ detail &emsp;//写文章
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┣━ ...
-&emsp;&emsp;┣━ statics &emsp;//静态文件
-&emsp;&emsp;&emsp;&emsp;┣━ ...
-&emsp;&emsp;┣━ store &emsp;//Redux数据
-&emsp;&emsp;&emsp;&emsp;┣━ ...
-&emsp;&emsp;┣━ App.js &emsp;//入口及路由
-&emsp;&emsp;┣━ index.js &emsp;//js文件入口
-&emsp;&emsp;┣━ style.js &emsp;//全局样式
+```
+┣━ build // 打包文件
+┣━ public // 打包文件
+  ┣━ api //假数据统一存储
+    ┣━ detail.json &emsp;//文章页数据
+    ┣━ headerList.json &emsp;//头部热门搜索数据
+    ┣━ home.json &emsp;//首页统一数据
+    ┣━ homeList.json &emsp;//首页加载更多文章数据
+    ┣━ login.json &emsp;//登录数据
+┣━ src //开发目录
+  ┣━ common &emsp;//公用组件
+    ┣━ header &emsp;//头部组件
+      ┣━ store &emsp;//Redux文件
+        ┣━ actionCreators.js &emsp;//action创建
+        ┣━ constants.js &emsp;//action.type常量文件
+        ┣━ index.js &emsp;//入口文件
+        ┣━ reducer.js &emsp;//reducer处理
+      ┣━ store &emsp;//UI组件
+      ┣━ store &emsp;//头部样式
+  ┣━ pages &emsp;//页面
+    ┣━ detail &emsp;//文章页
+      ┣━ ...
+    ┣━ detail &emsp;//首页
+      ┣━ ...
+    ┣━ detail &emsp;//登录页
+      ┣━ ...
+    ┣━ detail &emsp;//写文章
+      ┣━ ...
+  ┣━ statics &emsp;//静态文件
+    ┣━ ...
+  ┣━ store &emsp;//Redux数据
+    ┣━ ...
+  ┣━ App.js &emsp;//入口及路由
+  ┣━ index.js &emsp;//js文件入口
+  ┣━ style.js &emsp;//全局样式
 ┣━ .gitignore &emsp;//git忽略上传文件
 ┣━ package.json &emsp;//模块的描述文件
 ┣━ README.md &emsp;//说明文件
 ┣━ yarn.lock &emsp;//模块的描述文件
+```
 
 ### `效果预览`
 
-<iframe height=300 width=650 src="./src/statics/big_effect.gif">
+<iframe height=300 width=650 src="https://github.com/Ghost-Luu/React-JianShu/blob/master/src/statics/big_effect.gif">
 
 ### `实现主要几个功能`
 
