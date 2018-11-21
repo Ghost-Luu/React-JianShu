@@ -2,7 +2,7 @@
 
 ### [前言](_)
 
-> 前段时间接触了下React，一直想要自己写一个小Demo练手。在众多应用中，考虑之后选择了简书来模仿，这段时间就利用了工作之余的时间进行开发。主要用到了React+React-Router4+Redux+Redux-thunk+Immutable。然而写文章也是可以复盘一下自己的开发过程，对自己还是受益良多的。在这里简单叙述一下我仿简书部分布局以及功能实现的过程，仅做学习用途。
+> 前段时间接触了下React，一直想要自己写一个小Demo练手。在众多应用中，考虑之后选择了简书来模仿，这段时间就利用了工作之余的时间进行开发。主要用到了React+React-Router4+Redux+Redux-thunk+Immutable。然而写文章也是可以复盘一下自己的开发过程，对自己还是受益良多的。在这里简单叙述一下我仿简书部分布局以及功能实现的过程，仅做学习用途。
 
 ### `技术栈以及组件库`
 
@@ -19,14 +19,14 @@
 ┣━ build   // 打包文件
 ┣━ public   // 打包文件
   ┣━ api   //假数据统一存储
-    ┣━ detail.json   //文章页数据
+    ┣━ detail.json   //文章页数据
     ┣━ headerList.json   //头部热门搜索数据
     ┣━ home.json   //首页统一数据
-    ┣━ homeList.json   //首页加载更多文章数据
+    ┣━ homeList.json   //首页加载更多文章数据
     ┣━ login.json   //登录数据
 ┣━ src //开发目录
-  ┣━ common   //公用组件
-    ┣━ header   //头部组件
+  ┣━ common   //公用组件
+    ┣━ header   //头部组件
       ┣━ store   //Redux文件
         ┣━ actionCreators.js   //action创建
         ┣━ constants.js   //action.type常量文件
@@ -60,7 +60,7 @@
 
 ![avatar](./src/statics/big_effect.gif)
 
-### `实现主要几个功能`
+### `实现主要几个功能`
 
 
 
